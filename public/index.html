@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>there are bugs lurkin</title>
+  </head>
+
+  <body>
+    <div id="article_blockBanner">
+      <div class="article__wrapper">
+        <div class="Form">
+          <form method="POST" action="/api/submit" enctype="multipart/form-data">
+            <div class="input">
+              <label for="name">Namn</label>
+              <input id="name" name="name" type="text" maxlength="35" required/>
+            </div>
+
+            <div class="input">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" maxlength="35" required/>
+            </div>
+
+            <div class="input">
+              <label for="number">Telefon nummer</label>
+              <input id="number" name="telNumber" type="tel" maxlength="15" />
+            </div>
+
+            <div class="input">
+              <label for="address">Adress</label>
+              <input id="address" name="address" type="text" maxlength="35" required />
+            </div>
+
+            <div class="input">
+              <label for="jobType">Ärende typ</label>
+              <input id="jobType" name="jobType" type="text" maxlength="35" required/>
+            </div>
+
+            <div class="input">
+              <label for="message">Meddelande</label>
+              <textarea id="message" name="message" type="text" maxlength="250" required></textarea>
+            </div>
+
+            <div class="input">
+              <label for="media">Bilder</label>
+              <input id="media" name="media" type="file" accept="image/jpeg, image/png, image/gif, image/bmp, image/svg, image/webp, image/jfif" multiple/>
+            </div>
+
+            <button type="submit" class="form_submit">Skicka</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
